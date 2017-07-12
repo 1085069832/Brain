@@ -1,0 +1,796 @@
+fileFormatVersion: 2
+guid: b855f6f0b6d224d44a148b7d2e8c8e91
+timeCreated: 1499827469
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Block:*U10
+    100004: Block:*U101
+    100006: Block:*U103
+    100008: Block:*U105
+    100010: Block:*U107
+    100012: Block:*U109
+    100014: Block:*U111
+    100016: Block:*U113
+    100018: Block:*U115
+    100020: Block:*U118
+    100022: Block:*U12
+    100024: Block:*U120
+    100026: Block:*U122
+    100028: Block:*U124
+    100030: Block:*U127
+    100032: Block:*U129
+    100034: Block:*U131
+    100036: Block:*U133
+    100038: Block:*U135
+    100040: Block:*U137
+    100042: Block:*U139
+    100044: Block:*U14
+    100046: Block:*U141
+    100048: Block:*U143
+    100050: Block:*U145
+    100052: Block:*U147
+    100054: Block:*U150
+    100056: Block:*U152
+    100058: Block:*U154
+    100060: Block:*U156
+    100062: Block:*U158
+    100064: Block:*U16
+    100066: Block:*U160
+    100068: Block:*U162
+    100070: Block:*U164
+    100072: Block:*U18
+    100074: Block:*U20
+    100076: Block:*U22
+    100078: Block:*U24
+    100080: Block:*U26
+    100082: Block:*U28
+    100084: Block:*U30
+    100086: Block:*U33
+    100088: Block:*U35
+    100090: Block:*U37
+    100092: Block:*U39
+    100094: Block:*U4
+    100096: Block:*U41
+    100098: Block:*U44
+    100100: Block:*U46
+    100102: Block:*U48
+    100104: Block:*U51
+    100106: Block:*U53
+    100108: Block:*U55
+    100110: Block:*U57
+    100112: Block:*U59
+    100114: Block:*U6
+    100116: Block:*U62
+    100118: Block:*U64
+    100120: Block:*U66
+    100122: Block:*U68
+    100124: Block:*U70
+    100126: Block:*U72
+    100128: Block:*U74
+    100130: Block:*U76
+    100132: Block:*U78
+    100134: Block:*U8
+    100136: Block:*U80
+    100138: Block:*U82
+    100140: Block:*U84
+    100142: Block:*U87
+    100144: Block:*U89
+    100146: Block:*U91
+    100148: Block:*U93
+    100150: Block:*U95
+    100152: Block:*U97
+    100154: Block:*U99
+    100156: Block:166
+    100158: Block:167
+    100160: Block:169
+    100162: Block:171
+    100164: Block:173
+    100166: Block:175
+    100168: Block:177
+    100170: Block:179
+    100172: Block:181
+    100174: Block:183
+    100176: Block:185
+    100178: Block:187
+    100180: Block:189
+    100182: Block:191
+    100184: Block:193
+    100186: Block:195
+    100188: Block:196
+    100190: Block:198
+    100192: Block:200
+    100194: Block:202
+    100196: Block:204
+    100198: Block:206
+    100200: Block:207
+    100202: Block:209
+    100204: Block:211
+    100206: Block:213
+    100208: Block:214
+    100210: Block:216
+    100212: Block:218
+    100214: Block:220
+    100216: Block:222
+    100218: Block:224
+    100220: Block:225
+    100222: Block:227
+    100224: Block:229
+    100226: Block:231
+    100228: Block:233
+    100230: Block:235
+    100232: Block:237
+    100234: Block:239
+    100236: Block:241
+    100238: Block:243
+    100240: Block:245
+    100242: Block:247
+    100244: Block:249
+    100246: Block:250
+    100248: Block:252
+    100250: Block:254
+    100252: Block:256
+    100254: Block:258
+    100256: Block:260
+    100258: Block:262
+    100260: Block:264
+    100262: Block:266
+    100264: Block:268
+    100266: Block:270
+    100268: Block:272
+    100270: Block:274
+    100272: Block:276
+    100274: Block:278
+    100276: Block:280
+    100278: Block:281
+    100280: Block:283
+    100282: Block:285
+    100284: Block:287
+    100286: Block:289
+    100288: Block:290
+    100290: Block:292
+    100292: Block:294
+    100294: Block:296
+    100296: Block:298
+    100298: Block:300
+    100300: Block:302
+    100302: Block:304
+    100304: Block:306
+    100306: Block:308
+    100308: Block:310
+    100310: Block:312
+    100312: Block:313
+    100314: Block:315
+    100316: Block:317
+    100318: Block:319
+    100320: Block:321
+    100322: Block:323
+    100324: Block:325
+    100326: Block:327
+    100328: Layer:0
+    100330: Layer:0 1
+    100332: Layer:0 10
+    100334: Layer:0 11
+    100336: Layer:0 12
+    100338: Layer:0 13
+    100340: Layer:0 14
+    100342: Layer:0 15
+    100344: Layer:0 16
+    100346: Layer:0 17
+    100348: Layer:0 18
+    100350: Layer:0 19
+    100352: Layer:0 2
+    100354: Layer:0 20
+    100356: Layer:0 21
+    100358: Layer:0 21_MeshPart0
+    100360: Layer:0 21_MeshPart1
+    100362: Layer:0 22
+    100364: Layer:0 23
+    100366: Layer:0 24
+    100368: Layer:0 25
+    100370: Layer:0 26
+    100372: Layer:0 27
+    100374: Layer:0 28
+    100376: Layer:0 29
+    100378: Layer:0 3
+    100380: Layer:0 30
+    100382: Layer:0 31
+    100384: Layer:0 32
+    100386: Layer:0 33
+    100388: Layer:0 34
+    100390: Layer:0 35
+    100392: Layer:0 36
+    100394: Layer:0 37
+    100396: Layer:0 38
+    100398: Layer:0 39
+    100400: Layer:0 4
+    100402: Layer:0 40
+    100404: Layer:0 41
+    100406: Layer:0 42
+    100408: Layer:0 43
+    100410: Layer:0 44
+    100412: Layer:0 45
+    100414: Layer:0 46
+    100416: Layer:0 47
+    100418: Layer:0 48
+    100420: Layer:0 49
+    100422: Layer:0 5
+    100424: Layer:0 50
+    100426: Layer:0 51
+    100428: Layer:0 52
+    100430: Layer:0 53
+    100432: Layer:0 54
+    100434: Layer:0 55
+    100436: Layer:0 56
+    100438: Layer:0 57
+    100440: Layer:0 58
+    100442: Layer:0 59
+    100444: Layer:0 6
+    100446: Layer:0 60
+    100448: Layer:0 61
+    100450: Layer:0 62
+    100452: Layer:0 63
+    100454: Layer:0 64
+    100456: Layer:0 65
+    100458: Layer:0 66
+    100460: Layer:0 67
+    100462: Layer:0 68
+    100464: Layer:0 69
+    100466: Layer:0 7
+    100468: Layer:0 70
+    100470: Layer:0 71
+    100472: Layer:0 72
+    100474: Layer:0 73
+    100476: Layer:0 74
+    100478: Layer:0 75
+    100480: Layer:0 76
+    100482: Layer:0 8
+    100484: Layer:0 9
+    400000: //RootNode
+    400002: Block:*U10
+    400004: Block:*U101
+    400006: Block:*U103
+    400008: Block:*U105
+    400010: Block:*U107
+    400012: Block:*U109
+    400014: Block:*U111
+    400016: Block:*U113
+    400018: Block:*U115
+    400020: Block:*U118
+    400022: Block:*U12
+    400024: Block:*U120
+    400026: Block:*U122
+    400028: Block:*U124
+    400030: Block:*U127
+    400032: Block:*U129
+    400034: Block:*U131
+    400036: Block:*U133
+    400038: Block:*U135
+    400040: Block:*U137
+    400042: Block:*U139
+    400044: Block:*U14
+    400046: Block:*U141
+    400048: Block:*U143
+    400050: Block:*U145
+    400052: Block:*U147
+    400054: Block:*U150
+    400056: Block:*U152
+    400058: Block:*U154
+    400060: Block:*U156
+    400062: Block:*U158
+    400064: Block:*U16
+    400066: Block:*U160
+    400068: Block:*U162
+    400070: Block:*U164
+    400072: Block:*U18
+    400074: Block:*U20
+    400076: Block:*U22
+    400078: Block:*U24
+    400080: Block:*U26
+    400082: Block:*U28
+    400084: Block:*U30
+    400086: Block:*U33
+    400088: Block:*U35
+    400090: Block:*U37
+    400092: Block:*U39
+    400094: Block:*U4
+    400096: Block:*U41
+    400098: Block:*U44
+    400100: Block:*U46
+    400102: Block:*U48
+    400104: Block:*U51
+    400106: Block:*U53
+    400108: Block:*U55
+    400110: Block:*U57
+    400112: Block:*U59
+    400114: Block:*U6
+    400116: Block:*U62
+    400118: Block:*U64
+    400120: Block:*U66
+    400122: Block:*U68
+    400124: Block:*U70
+    400126: Block:*U72
+    400128: Block:*U74
+    400130: Block:*U76
+    400132: Block:*U78
+    400134: Block:*U8
+    400136: Block:*U80
+    400138: Block:*U82
+    400140: Block:*U84
+    400142: Block:*U87
+    400144: Block:*U89
+    400146: Block:*U91
+    400148: Block:*U93
+    400150: Block:*U95
+    400152: Block:*U97
+    400154: Block:*U99
+    400156: Block:166
+    400158: Block:167
+    400160: Block:169
+    400162: Block:171
+    400164: Block:173
+    400166: Block:175
+    400168: Block:177
+    400170: Block:179
+    400172: Block:181
+    400174: Block:183
+    400176: Block:185
+    400178: Block:187
+    400180: Block:189
+    400182: Block:191
+    400184: Block:193
+    400186: Block:195
+    400188: Block:196
+    400190: Block:198
+    400192: Block:200
+    400194: Block:202
+    400196: Block:204
+    400198: Block:206
+    400200: Block:207
+    400202: Block:209
+    400204: Block:211
+    400206: Block:213
+    400208: Block:214
+    400210: Block:216
+    400212: Block:218
+    400214: Block:220
+    400216: Block:222
+    400218: Block:224
+    400220: Block:225
+    400222: Block:227
+    400224: Block:229
+    400226: Block:231
+    400228: Block:233
+    400230: Block:235
+    400232: Block:237
+    400234: Block:239
+    400236: Block:241
+    400238: Block:243
+    400240: Block:245
+    400242: Block:247
+    400244: Block:249
+    400246: Block:250
+    400248: Block:252
+    400250: Block:254
+    400252: Block:256
+    400254: Block:258
+    400256: Block:260
+    400258: Block:262
+    400260: Block:264
+    400262: Block:266
+    400264: Block:268
+    400266: Block:270
+    400268: Block:272
+    400270: Block:274
+    400272: Block:276
+    400274: Block:278
+    400276: Block:280
+    400278: Block:281
+    400280: Block:283
+    400282: Block:285
+    400284: Block:287
+    400286: Block:289
+    400288: Block:290
+    400290: Block:292
+    400292: Block:294
+    400294: Block:296
+    400296: Block:298
+    400298: Block:300
+    400300: Block:302
+    400302: Block:304
+    400304: Block:306
+    400306: Block:308
+    400308: Block:310
+    400310: Block:312
+    400312: Block:313
+    400314: Block:315
+    400316: Block:317
+    400318: Block:319
+    400320: Block:321
+    400322: Block:323
+    400324: Block:325
+    400326: Block:327
+    400328: Layer:0
+    400330: Layer:0 1
+    400332: Layer:0 10
+    400334: Layer:0 11
+    400336: Layer:0 12
+    400338: Layer:0 13
+    400340: Layer:0 14
+    400342: Layer:0 15
+    400344: Layer:0 16
+    400346: Layer:0 17
+    400348: Layer:0 18
+    400350: Layer:0 19
+    400352: Layer:0 2
+    400354: Layer:0 20
+    400356: Layer:0 21
+    400358: Layer:0 21_MeshPart0
+    400360: Layer:0 21_MeshPart1
+    400362: Layer:0 22
+    400364: Layer:0 23
+    400366: Layer:0 24
+    400368: Layer:0 25
+    400370: Layer:0 26
+    400372: Layer:0 27
+    400374: Layer:0 28
+    400376: Layer:0 29
+    400378: Layer:0 3
+    400380: Layer:0 30
+    400382: Layer:0 31
+    400384: Layer:0 32
+    400386: Layer:0 33
+    400388: Layer:0 34
+    400390: Layer:0 35
+    400392: Layer:0 36
+    400394: Layer:0 37
+    400396: Layer:0 38
+    400398: Layer:0 39
+    400400: Layer:0 4
+    400402: Layer:0 40
+    400404: Layer:0 41
+    400406: Layer:0 42
+    400408: Layer:0 43
+    400410: Layer:0 44
+    400412: Layer:0 45
+    400414: Layer:0 46
+    400416: Layer:0 47
+    400418: Layer:0 48
+    400420: Layer:0 49
+    400422: Layer:0 5
+    400424: Layer:0 50
+    400426: Layer:0 51
+    400428: Layer:0 52
+    400430: Layer:0 53
+    400432: Layer:0 54
+    400434: Layer:0 55
+    400436: Layer:0 56
+    400438: Layer:0 57
+    400440: Layer:0 58
+    400442: Layer:0 59
+    400444: Layer:0 6
+    400446: Layer:0 60
+    400448: Layer:0 61
+    400450: Layer:0 62
+    400452: Layer:0 63
+    400454: Layer:0 64
+    400456: Layer:0 65
+    400458: Layer:0 66
+    400460: Layer:0 67
+    400462: Layer:0 68
+    400464: Layer:0 69
+    400466: Layer:0 7
+    400468: Layer:0 70
+    400470: Layer:0 71
+    400472: Layer:0 72
+    400474: Layer:0 73
+    400476: Layer:0 74
+    400478: Layer:0 75
+    400480: Layer:0 76
+    400482: Layer:0 8
+    400484: Layer:0 9
+    2300000: Layer:0
+    2300002: Layer:0 1
+    2300004: Layer:0 10
+    2300006: Layer:0 11
+    2300008: Layer:0 12
+    2300010: Layer:0 13
+    2300012: Layer:0 14
+    2300014: Layer:0 15
+    2300016: Layer:0 16
+    2300018: Layer:0 17
+    2300020: Layer:0 18
+    2300022: Layer:0 19
+    2300024: Layer:0 2
+    2300026: Layer:0 20
+    2300028: Layer:0 21_MeshPart0
+    2300030: Layer:0 21_MeshPart1
+    2300032: Layer:0 22
+    2300034: Layer:0 23
+    2300036: Layer:0 24
+    2300038: Layer:0 25
+    2300040: Layer:0 26
+    2300042: Layer:0 27
+    2300044: Layer:0 28
+    2300046: Layer:0 29
+    2300048: Layer:0 3
+    2300050: Layer:0 30
+    2300052: Layer:0 31
+    2300054: Layer:0 32
+    2300056: Layer:0 33
+    2300058: Layer:0 34
+    2300060: Layer:0 35
+    2300062: Layer:0 36
+    2300064: Layer:0 37
+    2300066: Layer:0 38
+    2300068: Layer:0 39
+    2300070: Layer:0 4
+    2300072: Layer:0 40
+    2300074: Layer:0 41
+    2300076: Layer:0 42
+    2300078: Layer:0 43
+    2300080: Layer:0 44
+    2300082: Layer:0 45
+    2300084: Layer:0 46
+    2300086: Layer:0 47
+    2300088: Layer:0 48
+    2300090: Layer:0 49
+    2300092: Layer:0 5
+    2300094: Layer:0 50
+    2300096: Layer:0 51
+    2300098: Layer:0 52
+    2300100: Layer:0 53
+    2300102: Layer:0 54
+    2300104: Layer:0 55
+    2300106: Layer:0 56
+    2300108: Layer:0 57
+    2300110: Layer:0 58
+    2300112: Layer:0 59
+    2300114: Layer:0 6
+    2300116: Layer:0 60
+    2300118: Layer:0 61
+    2300120: Layer:0 62
+    2300122: Layer:0 63
+    2300124: Layer:0 64
+    2300126: Layer:0 65
+    2300128: Layer:0 66
+    2300130: Layer:0 67
+    2300132: Layer:0 68
+    2300134: Layer:0 69
+    2300136: Layer:0 7
+    2300138: Layer:0 70
+    2300140: Layer:0 71
+    2300142: Layer:0 72
+    2300144: Layer:0 73
+    2300146: Layer:0 74
+    2300148: Layer:0 75
+    2300150: Layer:0 76
+    2300152: Layer:0 8
+    2300154: Layer:0 9
+    3300000: Layer:0
+    3300002: Layer:0 1
+    3300004: Layer:0 10
+    3300006: Layer:0 11
+    3300008: Layer:0 12
+    3300010: Layer:0 13
+    3300012: Layer:0 14
+    3300014: Layer:0 15
+    3300016: Layer:0 16
+    3300018: Layer:0 17
+    3300020: Layer:0 18
+    3300022: Layer:0 19
+    3300024: Layer:0 2
+    3300026: Layer:0 20
+    3300028: Layer:0 21_MeshPart0
+    3300030: Layer:0 21_MeshPart1
+    3300032: Layer:0 22
+    3300034: Layer:0 23
+    3300036: Layer:0 24
+    3300038: Layer:0 25
+    3300040: Layer:0 26
+    3300042: Layer:0 27
+    3300044: Layer:0 28
+    3300046: Layer:0 29
+    3300048: Layer:0 3
+    3300050: Layer:0 30
+    3300052: Layer:0 31
+    3300054: Layer:0 32
+    3300056: Layer:0 33
+    3300058: Layer:0 34
+    3300060: Layer:0 35
+    3300062: Layer:0 36
+    3300064: Layer:0 37
+    3300066: Layer:0 38
+    3300068: Layer:0 39
+    3300070: Layer:0 4
+    3300072: Layer:0 40
+    3300074: Layer:0 41
+    3300076: Layer:0 42
+    3300078: Layer:0 43
+    3300080: Layer:0 44
+    3300082: Layer:0 45
+    3300084: Layer:0 46
+    3300086: Layer:0 47
+    3300088: Layer:0 48
+    3300090: Layer:0 49
+    3300092: Layer:0 5
+    3300094: Layer:0 50
+    3300096: Layer:0 51
+    3300098: Layer:0 52
+    3300100: Layer:0 53
+    3300102: Layer:0 54
+    3300104: Layer:0 55
+    3300106: Layer:0 56
+    3300108: Layer:0 57
+    3300110: Layer:0 58
+    3300112: Layer:0 59
+    3300114: Layer:0 6
+    3300116: Layer:0 60
+    3300118: Layer:0 61
+    3300120: Layer:0 62
+    3300122: Layer:0 63
+    3300124: Layer:0 64
+    3300126: Layer:0 65
+    3300128: Layer:0 66
+    3300130: Layer:0 67
+    3300132: Layer:0 68
+    3300134: Layer:0 69
+    3300136: Layer:0 7
+    3300138: Layer:0 70
+    3300140: Layer:0 71
+    3300142: Layer:0 72
+    3300144: Layer:0 73
+    3300146: Layer:0 74
+    3300148: Layer:0 75
+    3300150: Layer:0 76
+    3300152: Layer:0 8
+    3300154: Layer:0 9
+    4300000: Layer:0
+    4300002: Layer:0
+    4300004: Layer:0
+    4300006: Layer:0
+    4300008: Layer:0
+    4300010: Layer:0
+    4300012: Layer:0
+    4300014: Layer:0
+    4300016: Layer:0
+    4300018: Layer:0
+    4300020: Layer:0
+    4300022: Layer:0
+    4300024: Layer:0
+    4300026: Layer:0
+    4300028: Layer:0
+    4300030: Layer:0
+    4300032: Layer:0
+    4300034: Layer:0
+    4300036: Layer:0
+    4300038: Layer:0
+    4300040: Layer:0
+    4300042: Layer:0_MeshPart0
+    4300044: Layer:0_MeshPart1
+    4300046: Layer:0
+    4300048: Layer:0
+    4300050: Layer:0
+    4300052: Layer:0
+    4300054: Layer:0
+    4300056: Layer:0
+    4300058: Layer:0
+    4300060: Layer:0
+    4300062: Layer:0
+    4300064: Layer:0
+    4300066: Layer:0
+    4300068: Layer:0
+    4300070: Layer:0
+    4300072: Layer:0
+    4300074: Layer:0
+    4300076: Layer:0
+    4300078: Layer:0
+    4300080: Layer:0
+    4300082: Layer:0
+    4300084: Layer:0
+    4300086: Layer:0
+    4300088: Layer:0
+    4300090: Layer:0
+    4300092: Layer:0
+    4300094: Layer:0
+    4300096: Layer:0
+    4300098: Layer:0
+    4300100: Layer:0
+    4300102: Layer:0
+    4300104: Layer:0
+    4300106: Layer:0
+    4300108: Layer:0
+    4300110: Layer:0
+    4300112: Layer:0
+    4300114: Layer:0
+    4300116: Layer:0
+    4300118: Layer:0
+    4300120: Layer:0
+    4300122: Layer:0
+    4300124: Layer:0
+    4300126: Layer:0
+    4300128: Layer:0
+    4300130: Layer:0
+    4300132: Layer:0
+    4300134: Layer:0
+    4300136: Layer:0
+    4300138: Layer:0
+    4300140: Layer:0
+    4300142: Layer:0
+    4300144: Layer:0
+    4300146: Layer:0
+    4300148: Layer:0
+    4300150: Layer:0
+    4300152: Layer:0
+    4300154: Layer:0
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
