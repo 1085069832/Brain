@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ShowLabel : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class ShowLabel : MonoBehaviour
     List<Vector3> defaultScales = new List<Vector3>();
     float scaleValue;
     HighLight highLight;
+    bool islabel;
     // Use this for initialization
     void Start()
     {
@@ -19,7 +21,6 @@ public class ShowLabel : MonoBehaviour
             label.localScale = Vector3.zero;
         }
     }
-
     // Update is called once per frame
     void Update()
     {
