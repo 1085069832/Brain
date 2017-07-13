@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Astronomy_InterfaceAnimManager : MonoBehaviour {
+public class Astronomy_InterfaceAnimManager : MonoBehaviour
+{
     public GameObject[] childElements;
     public float[] waitTimes;
     private IEnumerator appearA;
@@ -16,19 +17,19 @@ public class Astronomy_InterfaceAnimManager : MonoBehaviour {
 
     public void StartAppear()
     {
-        if (appearA!=null)
+        if (appearA != null)
         {
             StopCoroutine(appearA);
         }
-		Debug.Log (this.gameObject.name);
-        StartCoroutine(appearA=appearAnim());
+        Debug.Log(this.gameObject.name);
+        StartCoroutine(appearA = appearAnim());
     }
 
     IEnumerator appearAnim()
     {
-        for(int i=0;i< childElements.Length;i++)
+        for (int i = 0; i < childElements.Length; i++)
         {
-            yield return new WaitForSeconds( waitTimes[i]);
+            yield return new WaitForSeconds(waitTimes[i]);
             childElements[i].SetActive(true);
         }
         yield return null;
@@ -38,7 +39,7 @@ public class Astronomy_InterfaceAnimManager : MonoBehaviour {
     public void StartDisappear()
     {
         StopCoroutine(appearA);
-        for(int i=0;i<childElements.Length;i++)
+        for (int i = 0; i < childElements.Length; i++)
         {
             childElements[i].SetActive(false);
         }
