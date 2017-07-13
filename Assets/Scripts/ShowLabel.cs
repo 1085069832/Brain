@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class ShowLabel : MonoBehaviour
 {
-    [SerializeField] Transform label;
+    [SerializeField] Transform[] labels;
     [SerializeField] float speed = 3;
-    Vector3 defaultScale;
+    List<Vector3> defaultScales = new List<Vector3>();
     float scaleValue;
     HighLight highLight;
     // Use this for initialization
     void Start()
     {
         highLight = GetComponent<HighLight>();
-        defaultScale = label.localScale;
-        label.localScale = Vector3.zero;
+        foreach (Transform label in labels)
+        {
+            defaultScales.Add(label.localScale);
+            label.localScale = Vector3.zero;
+        }
     }
 
     // Update is called once per frame
@@ -29,6 +32,9 @@ public class ShowLabel : MonoBehaviour
             scaleValue -= Time.deltaTime * speed;
         }
         scaleValue = Mathf.Clamp(scaleValue, 0f, 1f);
-        label.localScale = Mathf.Clamp(scaleValue, 0f, 1f) * defaultScale;
+        for (int i = 0; i < defaultScales.Count; i++)
+        {
+            labels[i].localScale = Mathf.Clamp(scaleValue, 0f, 1f) * defaultScales[i];
+        }
     }
 }
