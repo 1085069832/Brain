@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class ShowLabel : MonoBehaviour
 {
@@ -11,9 +10,11 @@ public class ShowLabel : MonoBehaviour
     float scaleValue;
     HighLight highLight;
     bool islabel;
+    Camera _camera;
     // Use this for initialization
     void Start()
     {
+        _camera = Camera.main;
         highLight = GetComponent<HighLight>();
         foreach (Transform label in labels)
         {
@@ -33,8 +34,17 @@ public class ShowLabel : MonoBehaviour
             scaleValue -= Time.deltaTime * speed;
         }
         scaleValue = Mathf.Clamp(scaleValue, 0f, 1f);
-        for (int i = 0; i < defaultScales.Count; i++)
+        //设置label
+        for (int i = 0; i < labels.Length; i++)
         {
+            if (labels.Length < 2)
+            {
+                labels[i].position = highLight.ShowLabelPos;
+            }
+
+            labels[i].parent = transform;
+            labels[i].LookAt(_camera.transform.position);
+            labels[i].Rotate(new Vector3(-90, 0, 180), Space.Self);
             labels[i].localScale = Mathf.Clamp(scaleValue, 0f, 1f) * defaultScales[i];
         }
     }

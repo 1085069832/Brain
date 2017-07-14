@@ -9,6 +9,24 @@ public class HighLight : MonoBehaviour
     [SerializeField] Material lightMat;
     [HideInInspector] public bool toLight;
     Renderer[] renders;
+    Vector3 showLabelPos;
+
+    /// <summary>
+    /// label显示的位置
+    /// </summary>
+    public Vector3 ShowLabelPos
+    {
+        get
+        {
+            return showLabelPos;
+        }
+
+        set
+        {
+            showLabelPos = value;
+        }
+    }
+
     // Use this for initialization
     void Start()
     {
