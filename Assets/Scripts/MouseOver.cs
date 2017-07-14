@@ -5,6 +5,7 @@ using UnityEngine;
 public class MouseOver : MonoBehaviour
 {
     HighLight highLight;
+    ShowLabel showLabel;
     Camera _camera;
     RaycastHit raycastHit;
     bool isEnter;
@@ -14,19 +15,25 @@ public class MouseOver : MonoBehaviour
         _camera = Camera.main;
         isEnter = true;
         highLight = GetComponentInParent<HighLight>();
-        highLight.toLight = true;
+        showLabel = GetComponentInParent<ShowLabel>();
+        highLight.ToLight();
     }
 
     private void Update()
     {
-        if (isEnter)
+        if (isEnter && !showLabel.isShowAll)
         {
-            Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
-            bool isCollider = Physics.Raycast(ray, out raycastHit, 10);
-
-            if (isCollider)
+            if (Input.GetMouseButtonDown(0))
             {
-                highLight.ShowLabelPos = raycastHit.point;
+                Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
+                bool isCollider = Physics.Raycast(ray, out raycastHit, 10);
+
+                if (isCollider)
+                {
+                    showLabel.showlabel = true;
+                    showLabel.ShowLabelPos = raycastHit.point;
+                    showLabel.InitLabel();
+                }
             }
         }
     }
@@ -34,6 +41,7 @@ public class MouseOver : MonoBehaviour
     private void OnMouseExit()
     {
         isEnter = false;
-        highLight.toLight = false;
+        showLabel.showlabel = false;
+        highLight.ToDefault();
     }
 }
