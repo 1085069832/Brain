@@ -14,7 +14,9 @@ public class HighLight : MonoBehaviour
     {
         renders = GetComponentsInChildren<Renderer>();
     }
-
+    /// <summary>
+    /// 变亮
+    /// </summary>
     public void ToLight()
     {
         foreach (Renderer render in renders)
@@ -23,7 +25,9 @@ public class HighLight : MonoBehaviour
                 render.material = lightMat;
         }
     }
-
+    /// <summary>
+    /// 还原
+    /// </summary>
     public void ToDefault()
     {
         foreach (Renderer render in renders)

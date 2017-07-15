@@ -39,6 +39,11 @@ public class UIClick : MonoBehaviour
             foreach (ShowLabel label in showLabels)
             {
                 label.isShowAll = isShowAll;
+                MouseOver[] mouseOvers = label.GetComponentsInChildren<MouseOver>();
+                foreach (MouseOver mouseOver in mouseOvers)
+                {
+                    mouseOver.isSelect = false;
+                }
             }
         }
     }

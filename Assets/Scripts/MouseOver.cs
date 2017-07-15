@@ -8,14 +8,19 @@ public class MouseOver : MonoBehaviour
     ShowLabel showLabel;
     Camera _camera;
     RaycastHit raycastHit;
-    bool isEnter;
+    [HideInInspector] public bool isEnter;
+    [HideInInspector] public bool isSelect;
+
+    private void Start()
+    {
+        _camera = Camera.main;
+        highLight = GetComponentInParent<HighLight>();
+        showLabel = GetComponentInParent<ShowLabel>();
+    }
 
     private void OnMouseEnter()
     {
-        _camera = Camera.main;
-        isEnter = true;
-        highLight = GetComponentInParent<HighLight>();
-        showLabel = GetComponentInParent<ShowLabel>();
+        SetEnter(true);
         highLight.ToLight();
     }
 
@@ -33,15 +38,50 @@ public class MouseOver : MonoBehaviour
                     showLabel.showlabel = true;
                     showLabel.ShowLabelPos = raycastHit.point;
                     showLabel.InitLabel();
+                    SetSelect(true);
                 }
+            }
+        }
+        //点击其他地方
+        if (!isEnter && isSelect)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                SetSelect(false);
+                showLabel.showlabel = false;
+                highLight.ToDefault();
             }
         }
     }
 
     private void OnMouseExit()
     {
-        isEnter = false;
-        showLabel.showlabel = false;
-        highLight.ToDefault();
+        SetEnter(false);
+        if (!isSelect || showLabel.isShowAll)
+            highLight.ToDefault();
+    }
+    /// <summary>
+    /// 设置isSelect
+    /// </summary>
+    /// <param name="isSelect"></param>
+    public void SetSelect(bool isSelect)
+    {
+        MouseOver[] mouseOvers = showLabel.GetComponentsInChildren<MouseOver>();
+        foreach (MouseOver mouseOver in mouseOvers)
+        {
+            mouseOver.isSelect = isSelect;
+        }
+    }
+    /// <summary>
+    /// 设置isEnter
+    /// </summary>
+    /// <param name="isEnter"></param>
+    public void SetEnter(bool isEnter)
+    {
+        MouseOver[] mouseOvers = showLabel.GetComponentsInChildren<MouseOver>();
+        foreach (MouseOver mouseOver in mouseOvers)
+        {
+            mouseOver.isEnter = isEnter;
+        }
     }
 }

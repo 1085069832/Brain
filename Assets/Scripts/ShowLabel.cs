@@ -8,9 +8,9 @@ public class ShowLabel : MonoBehaviour
     [SerializeField] float speed = 3;
     List<Vector3> defaultScales = new List<Vector3>();
     Vector3 showLabelPos = Vector3.zero;
-    float scaleValue;
-    [HideInInspector] public bool showlabel;
-    [HideInInspector] public bool isShowAll;
+    float scaleValue;//label缩放值
+    [HideInInspector] public bool showlabel;//显示一个label
+    [HideInInspector] public bool isShowAll;//全部显示label
     Camera _camera;
     // Use this for initialization
     void Start()
