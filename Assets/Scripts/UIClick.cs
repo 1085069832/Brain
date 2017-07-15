@@ -11,6 +11,8 @@ public class UIClick : MonoBehaviour
     [SerializeField] GameObject cerebriCarotid;
     [SerializeField] GameObject cerebelliSuperior;
     [SerializeField] GameObject cerebelliInferior;
+    [SerializeField] GameObject rightBrain;
+    [SerializeField] GameObject LeftBrain;
 
     [SerializeField] Toggle cerebriAnteriorToggle;
     [SerializeField] Toggle cerebriMediaToggle;
@@ -19,8 +21,35 @@ public class UIClick : MonoBehaviour
     [SerializeField] Toggle cerebelliSuperiorToggle;
     [SerializeField] Toggle cerebelliInferiorToggle;
     [SerializeField] Toggle showAllLabelToggle;
+    [SerializeField] Toggle rightBrainToggle;
+    [SerializeField] Toggle LeftBrainToggle;
     [SerializeField] GameObject[] blocks;
     bool isShowAll;
+
+
+    public void OnRightBrainIsShow()
+    {
+        if (rightBrainToggle.isOn)
+        {
+            rightBrain.SetActive(true);
+        }
+        else
+        {
+            rightBrain.SetActive(false);
+        }
+    }
+
+    public void OnLeftBrainIsShow()
+    {
+        if (LeftBrainToggle.isOn)
+        {
+            LeftBrain.SetActive(true);
+        }
+        else
+        {
+            LeftBrain.SetActive(false);
+        }
+    }
 
     public void OnAllLabelShow()
     {

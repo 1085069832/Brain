@@ -7,15 +7,44 @@ public class BrainController : MonoBehaviour
     [SerializeField] Transform brain;
     [SerializeField] float scrollSpeed = 300f;
     [SerializeField] float wheelSpeed = 100f;
-    Camera _camera;
+    [SerializeField] Camera _camera;
     Vector3 offsetPos;
     Vector3 oldPos;
     Vector3 maxOldPos;
+    BrainTransparent brainTransparent;
+    float disScale;
+    [SerializeField] float minDis = 0.1f;
+    [SerializeField] float maxDis = 2.5f;
+    /// <summary>
+    /// 位置的比例值
+    /// </summary>
+    public float DisScale
+    {
+        get
+        {
+            Vector3 disVector = _camera.transform.position - transform.position;
+            if (disVector.magnitude <= minDis + 0.1f)
+            {
+                disScale = 0;
+            }
+            else if (disVector.magnitude >= maxDis - 0.1f)
+            {
+                disScale = 1;
+            }
+            else
+            {
+                float disScaleValue = disVector.magnitude / maxDis - 0.5f;
+                disScale = Mathf.Clamp(disScaleValue, 0, 1); ;
+            }
+            return disScale;
+        }
+    }
+
     // Use this for initialization
     void Start()
     {
-        _camera = Camera.main;
         _camera.transform.LookAt(transform);
+        brainTransparent = GetComponent<BrainTransparent>();
     }
 
     // Update is called once per frame
@@ -24,10 +53,11 @@ public class BrainController : MonoBehaviour
         float wheelValue = Input.GetAxis(MyConst.MOUSESW);
         if (wheelValue != 0)
         {
+            brainTransparent.ChangeMatColor(wheelValue);
             offsetPos = _camera.transform.position - transform.position;
             offsetPos += wheelValue * wheelSpeed * Time.deltaTime * _camera.transform.forward;
             _camera.transform.position = transform.position + offsetPos;
-            if (offsetPos.magnitude > 0.2f)
+            if (offsetPos.magnitude > minDis)
             {
                 oldPos = _camera.transform.position;
             }
@@ -36,7 +66,7 @@ public class BrainController : MonoBehaviour
                 _camera.transform.position = oldPos;
             }
 
-            if (offsetPos.magnitude > 2.5f)
+            if (offsetPos.magnitude > maxDis)
             {
                 //重置
                 _camera.transform.position = maxOldPos;
