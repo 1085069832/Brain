@@ -26,6 +26,10 @@ public class UIClick : MonoBehaviour
     [SerializeField] GameObject[] blocks;
     bool isShowAll;
 
+    public void OnExit()
+    {
+        Application.Quit();
+    }
 
     public void OnRightBrainIsShow()
     {

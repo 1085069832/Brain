@@ -27,13 +27,9 @@ public class BrainController : MonoBehaviour
             {
                 disScale = 0;
             }
-            else if (disVector.magnitude >= maxDis - 0.1f)
-            {
-                disScale = 1;
-            }
             else
             {
-                float disScaleValue = disVector.magnitude / maxDis - 0.5f;
+                float disScaleValue = disVector.magnitude / maxDis - 0.4f;
                 disScale = Mathf.Clamp(disScaleValue, 0, 1); ;
             }
             return disScale;
